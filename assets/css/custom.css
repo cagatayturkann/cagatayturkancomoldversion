@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+p {  
+  font-size: 14px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ============= Generic CSS ============== */
+.section-title {
+  padding-top: 90px;
+  padding-bottom: 50px;  
+}
+
+.section-title h2 {
+  position: relative;
+  text-align: center;
+  color: #333;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.widget-separator {
+  background-color: #cccccc;
+  width: 180px;
+  height: 1px;
+  margin: 15px auto 21px;
+}
+
+.widget-separator span {
+  width: 30px;
+  height: 4px;
+  margin: 0px auto;
+  display: block;
+  position: relative;
+  bottom: 2px;
+}
+
+.widget-separator span {
+  background-color: #ce1b28;
+}
+
+/* ============= Header CSS ============== */
+.navbar {
+  background-color: #21202E;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar .navbar-nav > li > a {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+
+.navbar .navbar-nav > li > a:hover {
+  color: #ce1b28;
+}
+
+.navbar .navbar-nav > li > a:focus {
+  color: #fff;
+}
+
+.navbar .navbar-nav > .active>a, 
+.navbar .navbar-nav > .active>a:hover,
+.navbar .navbar-nav > .active>a:focus {
+    background-color: transparent;
+    color: #ce1b28;
+} 
+
+.header {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('../img/header-bg.jpg');
+  background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-overlay {
+  background-color: rgba(31, 31, 31, 0.65);
+  height: 100vh;
+}
+
+.header-overlay h1 {
+  color: #fff;
+}
+
+.header-overlay #header-name {
+  color: #ce1b28;
+}
+
+/* ============= About CSS ============== */
+.about-profile-avatar img {
+  vertical-align: middle;
+  width: 335px;
+  height: 335px;
+  border-radius: 50%;
+}
+
+.about-profile-description p {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+
+}
+
+.about-skills {
+  margin-top: 25px;
+}
+
+.progress-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 20px;
+}
+
+.progress {
+  height: 20px;
+  background: #333;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 30px;
+  overflow: visible;
+}
+
+.progress .progress-bar {
+  background:#01A1A7;
+  position: relative;
+  -webkit-animation: animate-positive 2s;
+  animation: animate-positive 2s;
+}
+
+.progress .progress-value {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  position: absolute;
+  top: -30px;
+  right: -25px;
+}
+
+.progress .progress-bar:after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  background: #fff;
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  right: -5px;
+  z-index: 1;
+  transform: rotate(35deg);
+}
+
+/* ============= Portfolio CSS ============== */
+.portfolio {
+  background-color: #f5f5f5;
+}
+
+
+.project {
+  width: 100%;
+  height: 500px;
+  background-image: url(https://image.freepik.com/free-vector/abstract-geometric-background-design_1045-764.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0 !important;
+  float:left;
+}
+
+.project-1 {
+  background-image: url('../img/project-1-bg.jpg');
+}
+.project-2 {
+  background-image: url('../img/project-2-bg.jpg');
+}
+.project-3 {
+  background-image: url('../img/project-3-bg.JPG');
+}
+.project-4 {
+  background-image: url('../img/project-4-bg.jpg');
+}
+.project-5 {
+  background-image: url('../img/project-5-bg.jpg');
+}
+.project-6 {
+  background-image: url('../img/project-6-bg.jpg');
+}
+.project-7 {
+  background-image: url('../img/project-7-bg.JPG');
+}
+
+.project-hover {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40% 30px !important;
+}
+
+.project-hover hr {
+  height: 30px;
+  width: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: rgba(255, 255, 255, 1);
+  border: 0;
+}
+
+.project-hover button {
+  color: rgba(255, 255, 255, 1);
+  background-color: transparent;
+  padding: 2px 22px;
+  line-height: 40px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-hover button:hover {
+  border-color: rgba(51, 51, 51, 1);
+  color: rgba(51, 51, 51, 1);
+  background-color: #FFF;
+}
+
+.project:hover .project-hover {
+  opacity: 1;
+}
+
+.project:hover .project-hover hr {
+  width: 100%;
+  height: 5px;
+}
+
+.carousel-wrapper {
+  height: 100%;
+}
+.carousel-inner > .carousel-item > img {
+  width:100%;
+  height:50%;
+}
+#project-5-img {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+}
+.project-used-skills {
+  margin-left: 20px;
+}
+
+.project-used-skills li {
+  list-style-type: none;
+  font-size: 14px;
+}
+
+.project-used-skills li i {
+  padding: 0 3px 0 10px;
+}
+
+.project-icons ul {
+  margin:0;
+  padding: 0;    
+}
+
+.project-icons ul li { 
+  list-style: none;
+  display: inline;
+  padding-left: 10px;
+}
+  
+.project-icons ul li a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #9d9d9d;
+  border-radius: 3px;
+  width: 45px;
+  height: 45px;
+  line-height: 49px;
+  color: #9d9d9d;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;    
+}
+
+.project-icons ul li a:hover {    
+  background-color: #ce1b28;
+  border: 1px solid #ce1b28;
+  color: #fff;
+} 
+
+.project-icons ul li a i {
+  font-size: 20px;
+}
+  
+/* ============= Contact CSS ============== */
+
+.contact-us-form .form-control {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #8C8B8A;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  opacity: .8;
+  outline: 0px !important;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+#message {
+  height: 117px;
+  resize: none;
+}
+
+.submit-btn,
+.submit-btn:active,
+.submit-btn:focus,
+.submit-btn:visited {  
+  background-color: transparent;
+  border: 1px solid #ce1b28;
+  border-radius: 4px;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #ce1b28;
+  outline: 0px !important;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+.submit-btn:hover {
+  background: #ce1b28;
+  color: #fff;
+  border-color: #ce1b28;
+}
+
+.social-icons {
+  padding-top: 50px;
+  padding-bottom: 70px;  
+}
+
+.social-icons ul {
+  margin:0;
+  padding: 0;
+  text-align: center;  
+}
+
+.social-icons ul li { 
+  list-style: none;
+  display: inline;
+  padding-left: 10px;
+}
+
+.social-icons ul li a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #8C8B8A;
+  border-radius: 3px;
+  width: 45px;
+  height: 45px;
+  line-height: 49px;
+  color: #8C8B8A;
+   transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;  
+}
+
+.social-icons ul li a:hover {  
+  background-color: #ce1b28;
+  border: 1px solid #ce1b28;
+  color: #fff;
+} 
+
+.social-icons ul li a i {
+  font-size: 20px;
+}
+
+/* ============= Footer CSS ============== */
+footer {
+  background-color: #21202E;
+  padding-bottom: 35px;
+  padding-top: 35px;
+  border-bottom: 3px solid #ce1b28;
+}
+
+#copyright {
+  width: 100%;
+}
+
+#copyright p {
+  color: #8C8B8A;
+  font-weight: 600;
+  font-size: 14px;
+  /* text-transform: uppercase; */
+  margin-top: 13px;
+}
+
+#copyright p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.scroll-top {
+  text-align: right;
+  margin-top: 13px
+}
+
+.scroll-top a {
+  background-color: #ce1b28;
+  padding: 25px;
+}
+
+.scroll-top a i {
+  color: #fff;
+  font-size: 25px;
+}
+
+/* ============= 404 CSS ============== */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#notfound {
+  position: relative;
+  height: 100vh;
+  background: #030005;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 767px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.notfound .notfound-404 {
+  position: relative;
+  height: 180px;
+  margin-bottom: 20px;
+  z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50% , -50%);
+      -ms-transform: translate(-50% , -50%);
+          transform: translate(-50% , -50%);
+  font-size: 224px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: -12px;
+  color: #030005;
+  text-transform: uppercase;
+  text-shadow: -1px -1px 0px #8400ff, 1px 1px 0px #ff005a;
+  letter-spacing: -20px;
+}
+
+
+.notfound .notfound-404 h2 {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 110px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 0px #8400ff;
+  letter-spacing: 13px;
+  margin: 0;
+}
+
+.notfound a {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #ff005a;
+  text-decoration: none;
+  border: 2px solid;
+  background: transparent;
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  color: #8400ff;
+}
+
+@media only screen and (max-width: 767px) {
+    .notfound .notfound-404 h2 {
+        font-size: 24px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 h1 {
+      font-size: 182px;
+  }
+}
